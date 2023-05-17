@@ -1,0 +1,536 @@
+Git and GitHub
+
+
+What is Git?
+>Git is a popular version control system.
+>It is used for:
+Tracking code changes
+Tracking who made changes
+Coding collaboration
+
+What does Git do?
+.Manage projects with Repositories
+.Clone a project to work on a local copy
+.Control and track changes with Staging and Committing
+.Branch and Merge to allow for work on different parts and versions of a project
+.Pull the latest version of the project to a local copy
+.Push local updates to the main project
+
+
+
+What is GitHub?
+.Git is not the same as GitHub.
+.GitHub makes tools that use Git.
+.GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018.
+ 
+Github
+repositry->folder->file1
+                 ->file2
+                 ->file3
+                 ->file....n
+.github track modification.
+
+
+
+
+use git and github
+git --version ->
+
+git config --global user.name"AkritiAnand111"
+
+git config --global user.email"singhakriti254@gmail.com"
+
+git config --list
+
+pwd->tells us that we are in which direcotry
+ 
+*git status ->Git status command is used in Git to know the status of the working tree.
+ It shows the state of your working directory and helps you see all the files which are untracked by Git,
+ staged or unstaged. In shorter terms, Git will show you any difference in the current tree and the HEAD pointer
+
+
+*git init ->The git init command is used to generate a new, empty Git repository or to reinitialize an existing one. 
+With the help of this command, a .git subdirectory is created, which includes the metadata, like subdirectories for objects and template
+ files,needed for generating a new Git repository.
+
+*git add . ->The git add command adds new or changed files in your working directory to the Git staging area.
+
+git add is an important command - without it, no git commit would ever do anything. Sometimes, git add can have a reputation for
+ being an unnecessary step in development. But in reality, git add is an important and powerful tool. git add allows you to shape history 
+without changing how you work.
+
+*git commit -m"message"   ->Since we have finished our work, we are ready move from stage to commit for our repo.
+
+Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point".
+ It is a point in the project you can go back to if you find a bug, or want to make a change.When we commit, we should always
+ include a message.
+By adding clear messages to each commit, it is easy for yourself (and others) to see what has changed and when.
+
+*git log ->Git log is a utility tool to review and read a history of everything that happens to a repository.
+ Multiple options can be used with a git log to make history more specific. 
+Generally, the git log is a record of commits.
+
+2. Git uses a three-tree architecture
+It still has the repository and the working copy, but in between is another tree,
+ which is the staging index. When we made our first commit, we didn’t just perform a commit.
+ First, we used the add command. We added, then we committed.
+ It was a two-step process (added our files to the staging index, and then from there we committed to the repository).
+
+Git Concepts and Architecture
+repositery
+staging areas
+working
+
+////////////////////////////////////////////////////////////git hub //////////////////////////////////////////////////////////////////////
+
+GIT HUB
+GitHub is an immense platform for code hosting. It supports version controlling and collaboration and allows developers to work togethe
+ on projects. It offers both distributed version control and source code management (SCM) functionality of Git. It also facilitates
+ collaboration features such as bug tracking, feature requests, task management for every project.
+
+Essential components of the GitHub are:
+
+Repositories
+Branches
+Commits
+Pull Requests
+Git (the version control tool GitHub is built on)
+
+
+GIT push ans pull->
+
+GIT push-:The git push command is used to transfer or push the commit, which is made on a local branch in your computer to a remote
+ repository like GitHub. The command used for pushing to GitHub is given below.
+git push 'remote_name' 'branch_name'
+
+GIT PULL-:f you make a change in a repository, GIT PULL can allow others to view the changes. It is used to acknowledge the change
+ that you've made to the repository that you're working on. Or also called a target repository.
+The simple command to PULL from a branch is:
+git pull 'remote_name' 'branch_name'.
+
+The git pull command is a combination of git fetch which fetches the recent commits in the local repository and git merge, 
+which will merge the branch from a remote to a local branch also 'remote_name' is the repository name and 'branch_name' is the
+ name of the specific branch.
+
+/////////////////////////////////////////////////////////////////////////////////////////html///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+swarg for devloper->stack overflow
+
+ important point->for webdevlopment journey always refer to mdn docs
+
+HTML
+h t-hyper text->tekes u to next page ->one web page linked to another page
+m->markup->annotation/tag
+l->language->content
+
+(basic bilding block of a website creates skeleton)
+
+what is html?
+.HTML stands for Hyper Text Markup Language
+.HTML is the standard markup language for creating Web pages
+.HTML describes the structure of a Web page
+.HTML consists of a series of elements
+.HTML elements tell the browser how to display the content
+.HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+html text->(are of 2 types)
+1>block elements->(website divide into diffrent section through block elements) <p></p> <div></div> <h1></h1>
+2>inline elements->(used to diffrenciate specific part of the text) <a></a>  <strong></strong>   <em></em>
+
+
+tags->
+tells the browser how to render diffrent elements
+
+<!-----------------------------------------------------header---------------------------------------------->
+<h1>heading 1</h1>
+<h2>heading 2</h2>
+<h3>heading 3</h3>
+<h4>heading 4</h4>
+<h5>heading 5</h5>
+<h6>heading 6</h6>
+
+<!-----------------------------------------------------paragraph---------------------------------------------->
+<p>this is paragraph</P>
+
+
+The <p> HTML element represents a paragraph. Paragraphs are usually represented in visual media as blocks of
+ text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any 
+structural grouping of related content, such as images or form fields.
+
+EXAMPLE
+<p>Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.</p>
+
+<!-----------------------------------------------------div---------------------------------------------->
+<div>this is container</div>
+
+
+.The <div> tag defines a division or a section in an HTML document.
+
+.The <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
+
+.The <div> tag is easily styled by using the class or id attribute.
+
+.Any sort of content can be put inside the <div> tag! 
+
+.Note: By default, browsers always place a line break before and after the <div> element.
+
+
+<!-----------------------------------------------------br---------------------------------------------->
+<br>
+
+.The <br> tag inserts a single line break.
+
+.The <br> tag is useful for writing addresses or poems.
+
+.The <br> tag is an empty tag which means that it has no end tag.
+
+Tips and Notes
+Note: Use the <br> tag to enter line breaks, not to add space between paragraphs.
+
+<!-----------------------------------------------------list---------------------------------------------->
+HTML lists allow web developers to group a set of related items in lists.
+
+there are 3 types of list
+1>orderd list
+2>unorderd list
+3>disciptive list
+
+.Unordered HTML List
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+The list items will be marked with bullets (small black circles) by default:
+example-:
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+.Ordered HTML List
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+The list items will be marked with numbers by default:
+example-:
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+.HTML Description Lists
+HTML also supports description lists.
+A description list is a list of terms, with a description of each term.
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+example-:                                                 
+<dl>                                           
+  <dt>Coffee</dt>                             
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+ output-:
+ A Description List
+Coffee
+- black hot drink
+Milk
+- white cold drink
+
+<!-----------------------------------------------------image tag---------------------------------------------->
+
+The <img> tag is used to embed an image in an HTML page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed
+Note: Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.
+
+Tip: To link an image to another document, simply nest the <img> tag inside an <a> tag (see example below)
+
+Example-:
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+<img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:bottom">
+<img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:middle">
+<img src="smiley.gif" alt="Smiley face" width="42" height="42" style="vertical-align:top">
+<img src="smiley.gif" alt="Smiley face" width="42" height="42" style="float:right">
+<img src="smiley.gif" alt="Smiley face" width="42" height="42" style="float:left">
+
+
+<!-----------------------------------------------------Anchor tag---------------------------------------------->
+
+The <a> HTML element (or anchor element), with its href attribute, creates a hyperlink to web pages, files, email addresses, 
+locations in the same page, or anything else a URL can address.
+Content within each <a> should indicate the link's destination. If the href attribute is present, pressing the enter
+ key while focused on the <a> element will activate it.
+Example-:
+<p>You can reach Michael at:</p>
+
+<ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:m.bluth@example.com">Email</a></li>
+  <li><a href="tel:+123456789">Phone</a></li>
+</ul>
+
+<!-----------------------------------------------------horizontal line---------------------------------------------->
+The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).
+
+The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.
+
+example-:
+<hr style="width:50%;text-align:left;margin-left:0">
+
+
+<!-----------------------------------------------------pre tag---------------------------------------------->
+The <pre> tag defines preformatted text.
+
+Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be
+ displayed exactly as written in the HTML source code.
+
+EXAMPLE-:
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+
+// the output will be as written
+<!-----------------------------------------------------Text Formatting---------------------------------------------->
+
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text      X2 is written as x square 2;
+<sup> - Superscript text    is is used to write the value down;
+
+
+<!----------------------------------------------------Quotation and Citation Elements----------------------------------------------->
+
+<blockquote>,<q>, <abbr>, <address>, <cite>, and <bdo> HTML elements
+
+.The HTML <blockquote> element defines a section that is quoted from another source.
+ Browsers usually indent <blockquote> elements.
+
+.The HTML <q> tag defines a short quotation.
+ Browsers normally insert quotation marks around the quotation.
+
+.The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. 
+
+.The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+
+.The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+Note: A person's name is not the title of a work.
+The text in the <cite> element usually renders in italic.
+
+.BDO stands for Bi-Directional Override.
+The HTML <bdo> tag is used to override the current text direction:
+
+<!----------------------------------------------------tables----------------------------------------------->
+HTML tables allow web developers to arrange data into rows and columns.
+EXAMPLE-:
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+
+
+Table Cells
+Each table cell is defined by a <td> and a </td> tag.
+td stands for table data.
+Everything between <td> and </td> are the content of the table cell.
+
+Table Rows
+Each table row starts with a <tr> and ends with a </tr> tag.
+tr stands for table row.
+You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.
+Note: There are times when a row can have less or more cells than another.
+
+
+Table Headers
+Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
+th stands for table header.
+By default, the text in <th> elements are bold and centered, but you can change that with CSS.
+<!----------------------------------------------------Colspan & Rowspan----------------------------------------------->
+HTML Table - Colspan->horizontal
+To make a cell span over multiple columns, use the colspan attribute:
+Note: The value of the colspan attribute represents the number of columns to span.
+
+ HTML Table - Rowspan->vertical
+To make a cell span over multiple rows, use the rowspan attribute:
+Note: The value of the rowspan attribute represents the number of rows to span.
+
+<!----------------------------------------------------Colgroup----------------------------------------------->
+The <colgroup> tag specifies a group of one or more columns in a table for formatting.
+The <colgroup> tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row
+Note: The <colgroup> tag must be a child of a <table> element, after any <caption> elements and before any <thead>, <tbody>, <tfoot>, and <tr> elements.
+Tip: To define different properties to a column within a <colgroup>, use the <col> tag within the <colgroup> tag.	 
+ 	<colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup> 
+<!----------------------------------------------------span tag----------------------------------------------->
+A <span> element which is used to color a part of a text:
+The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+<!----------------------------------------------------semantic tag----------------------------------------------->	 
+Semantic elements = elements with a meaning
+A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+In HTML there are some semantic elements that can be used to define different parts of a web page:  
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+<!----------------------------------------------------forms----------------------------------------------->
+
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+
+The <form> Element
+The HTML <form> element is used to create an HTML form for user input:
+The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+All the different form elements are covered in this chapter: HTML Form Elements.
+The <input> Element
+The HTML <input> element is the most used form element.
+An <input> element can be displayed in many ways, depending on the type attribute.
+Text Fields
+The <input type="text"> defines a single-line input field for text input.
+The <label> Element
+Notice the use of the <label> element in the example above.
+The <label> tag defines a label for many form elements.
+The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+The <label> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+Radio Buttons
+The <input type="radio"> defines a radio button.
+Radio buttons let a user select ONE of a limited number of choices.
+Checkboxes
+The <input type="checkbox"> defines a checkbox.
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+The Submit Button
+The <input type="submit"> defines a button for submitting the form data to a form-handler.
+The form-handler is typically a file on the server with a script for processing input data.
+The form-handler is specified in the form's action attribute.
+
+///////////////////////////////////////////////////(how to add favicon )////////////////////////////////////////////////////////////////////////////
+->image sourece->photobucket
+
+
+ATTRIBUTES-:
+HTML attributes provide additional information about HTML elements.
+
+HTML Attributes
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+  
+question-:
+1>diffrence between main tag and body tag.
+inline css
+style tag is use-:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
